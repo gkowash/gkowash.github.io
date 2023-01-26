@@ -1,3 +1,61 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background-color: OldLace;
+}
+
 .header {
-  background-color: cyan;
+  padding: 15px 20px;
+  margin: 0 0 30px 0;
+  background-color: BurlyWood;
+}
+
+body > p {
+  padding: 0px 25px;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: Georgia;
+}
+
+.work-samples ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-left: 0px;
+  list-style-type: none;
+  font-size: 22px;
+  font-family: Arial;
+}
+
+.work-samples ul > li {
+  max-width: 25em;
+  margin: 30px 40px 0px;
+  padding: 20px;
+  background: rgba(150, 150, 150, 0.20);
+  border-radius: 20px;
+}
+
+.work-samples ul > li > a {
+  margin-right: 14px;
+  font-size: 18px;
+}
+
+.work-samples p {
+  font-size: 16px;
+  padding: 5px 30px;
+}
+
+.work-samples p.tags {
+  font-size: 14px;
+  color: #999999;
+  padding: 0;
+  margin: 15px 0 0;
 }
