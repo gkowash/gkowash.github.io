@@ -15,7 +15,7 @@ body {
 }
 
 body > p {
-  padding: 0px 25px;
+  padding: 0px 1.5em;
   font-size: 18px;
   font-family: Arial;
 }
@@ -25,10 +25,18 @@ body > p {
   font-family: Georgia;
 }
 
+a:link {
+  color: DarkCyan;
+}
+
+a:visited {
+  color: DarkCyan;
+}
+
 .work-samples ul {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 20px 2vw 0;
   padding-left: 0px;
   list-style-type: none;
   font-size: 22px;
@@ -36,14 +44,16 @@ body > p {
 }
 
 .work-samples ul > li {
-  max-width: 25em;
-  margin: 30px 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40vw;/*20em;*/
+  margin: 30px 1vw 0;
   padding: 20px;
   background: rgba(150, 150, 150, 0.20);
   border-radius: 20px;
 }
 
-.work-samples ul > li > a {
+.work-samples .links-tags a {
   margin-right: 14px;
   font-size: 18px;
 }
@@ -58,4 +68,11 @@ body > p {
   color: #999999;
   padding: 0;
   margin: 15px 0 0;
+}
+
+#tag-selector-div {
+  width: 33em;
+  margin: 1.5em 0 0 1.5em;
+  column-count: 4;
+  font-size: 18px;
 }

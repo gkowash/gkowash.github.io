@@ -1,63 +1,60 @@
-// Tag setup
-$(document).ready(function(){
-
-  /*** Read tag data and update list items ***/
+/* Get list of tags in use, option to filter only selected tags */
+function getTagsList(onlyChecked=false) {
   var tags = [];
 
   $(".work-samples li").each(function(index) {
-    // get tag list from data attribute
+    // get tag list for a given work sample
     var string = this.dataset.tags;
     var data = string.split(", ");
 
-    // update list of all tags
+    // update master list of tags
     data.forEach(function(tag) {
+      let isChecked = $(`#${tag}`).is(":checked");
+
       if (tag!="" && !tags.includes(tag)) {
-        tags.push(tag);
+        if (isChecked || !onlyChecked) {
+          tags.push(tag);
+        }
       }
     });
 
-    // insert tag text into each list item
-    $("p.tags", this).text("Tags: " + string);
+    return tags;
   });
+};
 
-  console.log("All tags: " + tags);
+function getAllTags() {
+  return getTagsList(onlyChecked=false);
+};
+
+function getCheckedTags() {
+  return getTagsList(onlyChecked=true);
+};
 
 
-  /*** Insert checkboxes for tag filtering ***/
-  var tagDiv = $("#tag-selector");
+/* Insert checkboxes into HTML to enable tag-based filtering */
+function addTagCheckboxes() {
+  var tags = getAllTags();
 
   tags.forEach(function(tag) {
-    tagDiv.append(`<input type="checkbox" id="${tag}" name="accept" value="yes" onclick=toggleVisibilityByTag(this)>`);
-    tagDiv.append(`<label for="${tag}"> ${tag} </label>`);
+    $("#tag-selector").append(`<input type="checkbox" id="${tag}" name="accept" value="yes" onclick=updateVisibilityByTag()>`);
+    $("#tag-selector").append(`<label for="${tag}"> ${tag} </label>`);
   });
+};
 
-});
 
+/* Update work sample visibility when a tag checkbox is toggled */
+function updateVisibilityByTag() {
+  var checkedTags = getCheckedTags();
 
-// Update visibility by tag
-
-function toggleVisibilityByTag(obj) {
-  var tag = obj.id;
-
-  if ($(obj).is(":checked")) {
-    var display = "block";
-  }
-  else {
-    var display = "none";
-  }
-
-  console.log(obj);
-
+  // If at least one of a work sample's tags is checked, make it visible
   $(".work-samples li").each(function(index) {
-    if (this.dataset.tags.includes(tag)) {
-      this.style.display = display;
-    }
-  });
+    this.style.display = "none";  // set to invisible by default
 
-  /*if ($(obj).is(":checked")) {
-    $(obj).style.display = "block";
-  }
-  else {
-    $(obj).style.display = "none";
-  }*/
+    this.dataset.tags.forEach(function(tag) {
+      if (checkedTags.includes(tag)) {
+        this.style.display = "flex"; // previously "block"; modified to test new layout
+        break;
+      }
+    };
+  });
 }
