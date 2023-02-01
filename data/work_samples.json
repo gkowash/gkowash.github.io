@@ -1,11 +1,11 @@
 [
 
   {
-    "title": "Magnetohydrodynamics (MHD) engineering internship (Princeton Plasma Physics Laboratory)",
+    "title": "Magnetohydrodynamics (MHD) engineering internship",
     "summary": "MHD-focused computational fluid dynamics (CFD) engineering internship at the Princeton Plasma Physics Laboratory in 2021.",
     "demonstrates": "Demonstrates knowledge of CFD and MHD principles with OpenFOAM (C++), ability to present technical material in written and oral format, and effective collaboratation in professional environments.",
     "links": [ ["Report", "PPPL_Final_Paper.pdf"], ["Presentation", "https://meetings.aps.org/Meeting/DPP21/Session/JP11.172"] ],
-    "tags": ["Internship", "Python", "C++", "CFD", "Writing", "Speaking", "Collaborative"]
+    "tags": ["Professional", "Python", "C++", "CFD", "Writing", "Speaking", "Collaboration"]
   },
 
 
@@ -14,7 +14,7 @@
     "summary": "A partially-complete Python mathematical animation engine conceptually inspired by Grant Sanderson's <a href=\"https://github.com/3b1b/manim\">Manim</a> library.",
     "demonstrates": "Demonstrates high-level object oriented programming in Python, graphics and video processing knowledge, and creative application of mathematics to solve complex problems.",
     "links": [ ["Video", "https://www.youtube.com/watch?v=AFWK5yaAGS0"], ["Code", "https://github.com/gkowash/Animation-engine"] ],
-    "tags": ["Personal", "Python", "Graphics", "Video", "Mathematics"]
+    "tags": ["Personal", "Python", "Graphics", "Audio/Video", "Mathematics"]
   },
 
 
@@ -23,16 +23,16 @@
     "summary": "Motion tracking and analysis script written in Python for a lab course at Cal Poly Humboldt.",
     "demonstrates": "Demonstrates video processing and data analysis with Python, creative implementation of custom algorithms, and ability to write technical documentation.",
     "links": [ ["Video", "https://www.youtube.com/watch?v=G4OM8BM-_yI"], ["Report", "Lab_5__Video_Analysis.pdf"], ["Code", "https://github.com/gkowash/PHYX-462-Lab-5"] ],
-    "tags": ["Academic", "Python", "Video", "Data analysis"]
+    "tags": ["Academic", "Python", "Audio/Video", "Data analysis", "Writing"]
   },
 
 
   {
     "title": "NHK podcast downloader",
     "summary": "Python script to collect and download audio news reports from the NHK's Easy Japanese series.",
-    "demonstrates": "Demonstrates user-oriented software design, basic web scraping, and the application of programming to real-world problems.",
+    "demonstrates": "Demonstrates user-oriented software design, basic web scraping with Python, and the application of programming to real-world problems.",
     "links": [ ["Code", "https://github.com/gkowash/NHK-downloader"] ],
-    "tags": ["Personal", "Python", "Web", "Audio"]
+    "tags": ["Personal", "Python", "Web", "Audio/Video"]
   },
 
 
@@ -41,7 +41,31 @@
     "summary": "Data analysis script I contributed to my team's entry in the three-day 2020 COMAP Mathematical Contest in Modeling.",
     "demonstrates": "Demonstrates proficiency in data analysis with Python, ability to rapidly prototype solutions, and effective collaboration with peers.",
     "links": [ ["Code", "https://github.com/gkowash/MCM-2020"] ],
-    "tags": ["Academic", "Python", "Data analysis", "Mathematics", "Collaborative"]
+    "tags": ["Academic", "Python", "Data analysis", "Mathematics", "Collaboration"]
+  },
+
+  {
+    "title": "Work porfolio website",
+    "summary": "Portfolio site on GitHub Pages to host work samples for prospective employers.",
+    "demonstrates": "Demonstrates basic front-end web design, professional experience, and personal organization.",
+    "links": [ ["Code", "https://github.com/gkowash/MCM-2020"] ],
+    "tags": ["Professional", "HTML/CSS", "JavaScript", "Web design", "Writing"]
+  },
+
+  {
+    "title": "OpenShift NGINX web application",
+    "summary": "Web application created for my internship at CERN in the summer of 2022.",
+    "demonstrates": "Demonstrates basic full-stack web development, deisgn of technical software tools, and ability to perform in a professional environment.",
+    "links": [ ["Video", "https://youtu.be/-y739v5VNBg"] ],
+    "tags": ["Professional", "HTML/CSS", "JavaScript", "Python", "C++", "Web design"]
+  },
+
+  {
+    "title": "From-scratch fluid simulation code",
+    "summary": "Basic fluid simulation written in C# using the Unity game engine.",
+    "demonstrates": "Demonstrates first-principles knowledge of computational fluid dynamics, proficiency coding in C#, and intrinsic love of learning.",
+    "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation"] ],
+    "tags": ["Personal", "CFD", "C#", "Audio/Video"]
   }
 
 ]

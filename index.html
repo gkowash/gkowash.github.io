@@ -16,79 +16,75 @@
     <div class="header">
       <h1>Griffin Kowash</h1>
     </div>
-
-    <p>
-      The work below comes from internships, coursework, and personal projects
-      that demonstrate my technical proficiency and professional experience.
-    </p>
+    
     <p>
       Thank you for taking the time to look at my portfolio.
       If you have any questions, please feel free to contact me
       at <a href="mailto: gkowash@gmail.com">gkowash@gmail.com</a>.
     </p>
+    <p>
+      The work below comes from internships, coursework, and personal projects
+      that demonstrate my technical proficiency and professional experience.
+    </p>
 
-    <div id="tag-selector-div"></div>
+    <div id="tag-selector-div">
+      <div class="tag-section" id="context">
+        <h4>Context</h4>
+        <input type="checkbox" id="Professional" onclick=updateVisibilityByTag()>
+        <label for="Professional"> Professional </label>
+        <br>
+        <input type="checkbox" id="Academic" onclick=updateVisibilityByTag()>
+        <label for="Academic"> Academic </label>
+        <br>
+        <input type="checkbox" id="Personal" onclick=updateVisibilityByTag()>
+        <label for="Personal"> Personal </label>
+      </div>
+      <div class="tag-section" id="language">
+        <h4>Language</h4>
+        <input type="checkbox" id="Python" onclick=updateVisibilityByTag()>
+        <label for="Python"> Python </label>
+        <br>
+        <input type="checkbox" id="Cpp" onclick=updateVisibilityByTag()>
+        <label for="Cpp"> C++ </label>
+        <br>
+        <input type="checkbox" id="Cs" onclick=updateVisibilityByTag()>
+        <label for="Cs"> C# </label>
+        <br>
+        <input type="checkbox" id="JavaScript" onclick=updateVisibilityByTag()>
+        <label for="JavaScript"> JavaScript </label>
+        <br>
+        <input type="checkbox" id="HTML-CSS" onclick=updateVisibilityByTag()>
+        <label for="HTML-CSS"> HTML/CSS </label>
+      </div>
+      <div class="tag-section" id="hard-skills">
+        <h4>Hard skills</h4>
+        <input type="checkbox" id="Data-analysis" onclick=updateVisibilityByTag()>
+        <label for="Data-analysis"> Data analysis </label>
+        <br>
+        <input type="checkbox" id="Web-design" onclick=updateVisibilityByTag()>
+        <label for="Web-design">  Web design </label>
+        <br>
+        <input type="checkbox" id="CFD" onclick=updateVisibilityByTag()>
+        <label for="CFD"> CFD </label>
+        <br>
+        <input type="checkbox" id="Audio-Video" onclick=updateVisibilityByTag()>
+        <label for="Audio-Video"> Audio/Video </label>
+      </div>
+      <div class="tag-section" id="soft-skills">
+        <h4>Soft skills</h4>
+        <input type="checkbox" id="Writing" onclick=updateVisibilityByTag()>
+        <label for="Writing"> Writing </label>
+        <br>
+        <input type="checkbox" id="Speaking" onclick=updateVisibilityByTag()>
+        <label for="Speaking"> Speaking </label>
+        <br>
+        <input type="checkbox" id="Collaboration" onclick=updateVisibilityByTag()>
+        <label for="Collaboration"> Collaboration </label>
+      </div>
+    </div>
 
     <div class="work-samples">
       <ul>
-        <!--
-        <li data-tags="Internship, Python, C++, CFD, Writing, Speaking, Collaborative">
-          Magnetohydrodynamics (MHD) engineering internship (Princeton Plasma Physics Laboratory)
-          <p>
-            MHD-focused computational fluid dynamics (CFD) engineering internship at the Princeton Plasma Physics Laboratory in 2021.
-            <br><br>Demonstrates knowledge of CFD and MHD principles with OpenFOAM (C++), ability to present technical material in written and oral format, and effective collaboratation in professional environments.
-          </p>
-          <a href="PPPL_Final_Paper.pdf">[Report]</a>
-          <a href="https://meetings.aps.org/Meeting/DPP21/Session/JP11.172">[Presentation]</a>
-          <p class="tags"></p>
-        </li>
-
-        <li data-tags="Personal, Python, Graphics, Video, Mathematics">
-          Procedural animation software
-          <p>
-            A partially-complete Python mathematical animation engine conceptually inspired by Grant Sanderson's <a href="https://github.com/3b1b/manim">Manim</a> library.
-            <br><br>Demonstrates high-level object oriented programming in Python, graphics and video processing knowledge, and creative application of mathematics to solve complex problems.
-          </p>
-          <a href="https://www.youtube.com/watch?v=AFWK5yaAGS0">[Video]</a>
-          <a href="https://github.com/gkowash/Animation-engine">[Code]</a>
-          <p class="tags"></p>
-        </li>
-
-        <li data-tags="Academic, Python, Video, Data analysis">
-          Motion tracking video analysis
-          <p>
-            Motion tracking and analysis script written in Python for a lab course at Cal Poly Humboldt.
-            <br><br>Demonstrates video processing and data analysis with Python, creative implementation of custom algorithms, and ability to write technical documentation.
-          </p>
-          <a href="https://www.youtube.com/watch?v=G4OM8BM-_yI">[Video]</a>
-          <a href="Lab_5__Video_Analysis.pdf">[Report]</a>
-          <a href="https://github.com/gkowash/PHYX-462-Lab-5">[Code]</a>
-          <p class="tags"></p>
-        </li>
-
-        <li data-tags="Personal, Python, Web, Audio">
-          NHK podcast downloader
-          <p>
-            Python script to collect and download audio news reports from the NHK's Easy Japanese series.
-            <br><br>Demonstrates user-oriented software design, basic web scraping, and the application of programming to real-world problems.
-          </p>
-          <a href="https://github.com/gkowash/NHK-downloader">[Code]</a>
-          <a href="#">[Discussion]</a>
-          <p class="tags"></p>
-        </li>
-
-        <li data-tags="Academic, Python, Data analysis, Collaborative">
-          2020 Mathematical Contest in Modeling entry
-          <p>
-            Data analysis script I contributed to my team's entry in the three-day 2020 COMAP Mathematical Contest in Modeling.
-            <br><br>Demonstrates proficiency in data analysis with Python, ability to rapidly prototype solutions, and effective collaboration with peers.
-          </p>
-          <a href="https://github.com/gkowash/MCM-2020">[Code]</a>
-          <a href="#">[Discussion]</a>
-          <p class="tags"></p>
-        </li>
-      -->
-
       </ul>
     </div>
 

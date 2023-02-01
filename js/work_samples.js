@@ -34,7 +34,7 @@ function addWorkSamples(data) {
 
   });
 
-  addTagCheckboxes();
+  //addTagCheckboxes();
 };
 
 function getTagsList(onlyChecked=false) {
@@ -73,10 +73,15 @@ function getCheckedTags() {
 function getTagID(tag) {
   /* Handles forbidden characters in HTML tags (+, whitespace, etc.) */
   if (tag === "C++") {return "Cpp"}
+  if (tag === "C#") {return "Cs"}
   if (tag === "Data analysis") {return "Data-analysis"}
+  if (tag === "Web design") {return "Web-design"}
+  if (tag === "HTML/CSS") {return "HTML-CSS"}
+  if (tag === "Audio/Video") {return "Audio-Video"}
   else {return tag}
 };
 
+/* Not currently in use */
 function addTagCheckboxes() {
   /* Insert checkboxes into HTML to enable tag-based filtering */
   var tags = getAllTags();
