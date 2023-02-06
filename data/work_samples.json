@@ -8,15 +8,13 @@
     "tags": ["Professional", "Python", "C++", "CFD", "Writing", "Speaking", "Collaboration"]
   },
 
-
   {
-    "title": "Procedural animation software",
-    "summary": "A partially-complete Python mathematical animation engine conceptually inspired by Grant Sanderson's <a href=\"https://github.com/3b1b/manim\">Manim</a> library.",
-    "demonstrates": "Demonstrates high-level object oriented programming in Python, graphics and video processing knowledge, and creative application of mathematics to solve complex problems.",
-    "links": [ ["Video", "https://www.youtube.com/watch?v=AFWK5yaAGS0"], ["Code", "https://github.com/gkowash/Animation-engine"] ],
-    "tags": ["Personal", "Python", "Graphics", "Audio/Video", "Mathematics"]
+    "title": "CERN software design internship",
+    "summary": "Web application created with OpenShift and NGINX for my internship at CERN in the summer of 2022 to host and manipulate detector calibration data.",
+    "demonstrates": "Demonstrates basic web development, design of technical software tools, and ability to succeed in a professional environment.<br><br>Source code is withheld for security reasons.",
+    "links": [ ["Video", "https://youtu.be/-y739v5VNBg"] ],
+    "tags": ["Professional", "HTML/CSS", "JavaScript", "Python", "C++", "Web design"]
   },
-
 
   {
     "title": "Motion tracking video analysis",
@@ -26,6 +24,30 @@
     "tags": ["Academic", "Python", "Audio/Video", "Data analysis", "Writing"]
   },
 
+  {
+    "title": "Determination of g from pendulum measurements",
+    "summary": "Report evaluating different methods of measuring gravitational acceleration using a pendulum for a lab course at Cal Poly Humboldt.",
+    "demonstrates": "Demonstrates ability to design and construct lab experiments, thoughtfully analyze measurements and error sources, and clearly present technical information in writing.",
+    "links": [ ["Report", "Lab_1__Pendulum.pdf"], ["Code", "https://github.com/gkowash/Pendulum-Lab"] ],
+    "tags": ["Academic", "Python", "Data analysis", "Electronics", "Writing"]
+  },
+
+  {
+    "title": "Particle physics analysis course",
+    "summary": "Course on particle physics data analysis with the C++ library ROOT, taken in spring 2020.",
+    "demonstrates": "Demonstrates knowledge of particle physics and special relativity, familiarity with C++ concepts such as pointers, and ability to analyze and interpret large datasets.",
+    "links": [ ["Code", "https://github.com/gkowash?tab=repositories&q=PHYS175&type=&language=&sort="] ],
+    "tags": ["Academic", "C++", "Data analysis", "Mathematics"]
+  },
+
+
+  {
+    "title": "Procedural animation software",
+    "summary": "A partially-complete Python mathematical animation engine conceptually inspired by Grant Sanderson's <a href=\"https://github.com/3b1b/manim\">Manim</a> library.",
+    "demonstrates": "Demonstrates high-level object oriented programming in Python, graphics and video processing knowledge, and creative application of mathematics to solve complex problems.",
+    "links": [ ["Video", "https://www.youtube.com/watch?v=AFWK5yaAGS0"], ["Code", "https://github.com/gkowash/Animation-engine"] ],
+    "tags": ["Personal", "Python", "Graphics", "Audio/Video", "Mathematics"]
+  },
 
   {
     "title": "NHK podcast downloader",
@@ -35,10 +57,9 @@
     "tags": ["Personal", "Python", "Web", "Audio/Video"]
   },
 
-
   {
     "title": "2020 Mathematical Contest in Modeling entry",
-    "summary": "Data analysis script I contributed to my team's entry in the three-day 2020 COMAP Mathematical Contest in Modeling.",
+    "summary": "Data analysis script contributed to my team's entry in the three-day 2020 COMAP Mathematical Contest in Modeling.",
     "demonstrates": "Demonstrates proficiency in data analysis with Python, ability to rapidly prototype solutions, and effective collaboration with peers.",
     "links": [ ["Code", "https://github.com/gkowash/MCM-2020"] ],
     "tags": ["Academic", "Python", "Data analysis", "Mathematics", "Collaboration"]
@@ -46,26 +67,26 @@
 
   {
     "title": "Work porfolio website",
-    "summary": "Portfolio site on GitHub Pages to host work samples for prospective employers.",
+    "summary": "Work portfolio (this site) on GitHub Pages to host work samples for prospective employers.",
     "demonstrates": "Demonstrates basic front-end web design, professional experience, and personal organization.",
     "links": [ ["Code", "https://github.com/gkowash/MCM-2020"] ],
     "tags": ["Professional", "HTML/CSS", "JavaScript", "Web design", "Writing"]
   },
 
   {
-    "title": "OpenShift NGINX web application",
-    "summary": "Web application created for my internship at CERN in the summer of 2022.",
-    "demonstrates": "Demonstrates basic full-stack web development, deisgn of technical software tools, and ability to perform in a professional environment.",
-    "links": [ ["Video", "https://youtu.be/-y739v5VNBg"] ],
-    "tags": ["Professional", "HTML/CSS", "JavaScript", "Python", "C++", "Web design"]
+    "title": "From-scratch fluid simulation code",
+    "summary": "Basic fluid simulation written in C# using the Unity game engine.",
+    "demonstrates": "Demonstrates first-principles knowledge of computational fluid dynamics, proficiency coding in C#, and intrinsic motivation to learn.",
+    "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation"] ],
+    "tags": ["Personal", "CFD", "C#", "Audio/Video"]
   },
 
   {
-    "title": "From-scratch fluid simulation code",
-    "summary": "Basic fluid simulation written in C# using the Unity game engine.",
-    "demonstrates": "Demonstrates first-principles knowledge of computational fluid dynamics, proficiency coding in C#, and intrinsic love of learning.",
-    "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation"] ],
-    "tags": ["Personal", "CFD", "C#", "Audio/Video"]
+    "title": "Light-sensitive robot",
+    "summary": "Light-sensitive robotic toy car that backs away from light sources while emitting distressed noises, designed and constructed from scratch using electronics first principles.",
+    "demonstrates": "Demonstrates hardware skills, creative application of electronics knowledge to novel problems, and implementation of single-transistor amplifiers, 555 timers, light and sound transducers, and motor controllers.",
+    "links": [ ["Video", "https://www.youtube.com/shorts/HaIjD_-Oc_c"] ],
+    "tags": ["Personal", "Electronics"]
   }
 
 ]

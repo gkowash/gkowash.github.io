@@ -16,16 +16,24 @@
     <div class="header">
       <h1>Griffin Kowash</h1>
     </div>
-    
-    <p>
-      Thank you for taking the time to look at my portfolio.
-      If you have any questions, please feel free to contact me
-      at <a href="mailto: gkowash@gmail.com">gkowash@gmail.com</a>.
-    </p>
-    <p>
-      The work below comes from internships, coursework, and personal projects
-      that demonstrate my technical proficiency and professional experience.
-    </p>
+
+    <div id="intro">
+      <p>
+        Hello, and thank you for taking the time to look through my portfolio!
+      </p>
+      <!--<p>
+        The work below comes from internships, coursework, and personal
+        projects that demonstrate my technical proficiency and professional
+        experience.
+      </p>-->
+      <p>
+        Use the checkboxes to filter work samples, or leave them unchecked to view all.
+      </p>
+      <p>
+        If you have any questions, please feel free to contact me
+        at <a href="mailto: gkowash@gmail.com">gkowash@gmail.com</a>.
+      </p>
+    </div>
 
     <div id="tag-selector-div">
       <div class="tag-section" id="context">
@@ -57,7 +65,7 @@
         <label for="HTML-CSS"> HTML/CSS </label>
       </div>
       <div class="tag-section" id="hard-skills">
-        <h4>Hard skills</h4>
+        <h4>Technical skills</h4>
         <input type="checkbox" id="Data-analysis" onclick=updateVisibilityByTag()>
         <label for="Data-analysis"> Data analysis </label>
         <br>
@@ -69,9 +77,12 @@
         <br>
         <input type="checkbox" id="Audio-Video" onclick=updateVisibilityByTag()>
         <label for="Audio-Video"> Audio/Video </label>
+        <br>
+        <input type="checkbox" id="Electronics" onclick=updateVisibilityByTag()>
+        <label for="Electronics"> Electronics </label>
       </div>
-      <div class="tag-section" id="soft-skills">
-        <h4>Soft skills</h4>
+      <div class="tag-section" id="communication-skills">
+        <h4>Communication</h4>
         <input type="checkbox" id="Writing" onclick=updateVisibilityByTag()>
         <label for="Writing"> Writing </label>
         <br>

@@ -14,16 +14,18 @@ function addWorkSamples(data) {
   data.forEach( function(entry) {
 
     var links_str = "";
-    entry.links.forEach( link => links_str += `<a href=${link[1]}>${link[0]}</a>\n` );
+    entry.links.forEach( link => links_str += `<a href=${link[1]} target="_blank">${link[0]}</a>\n` );
 
     var html_str = `
       <li data-tags="${entry.tags.join(", ")}">
         ${entry.title}
-        <p>
-          ${entry.summary}
-          <br><br>
-          ${entry.demonstrates}
-        </p>
+        <div class="description">
+          <p>
+            ${entry.summary}
+            <br><br>
+            ${entry.demonstrates}
+          </p>
+        </div>
         <div class="links-tags">
           ${links_str}
           <p class="tags">Tags: ${entry.tags.join(", ")}</p>
@@ -81,7 +83,7 @@ function getTagID(tag) {
   else {return tag}
 };
 
-/* Not currently in use */
+/* Not currently in use! */
 function addTagCheckboxes() {
   /* Insert checkboxes into HTML to enable tag-based filtering */
   var tags = getAllTags();
@@ -101,10 +103,11 @@ function addTagCheckboxes() {
 
 function updateVisibilityByTag() {
   /* Update work sample visibility when a tag checkbox is toggled */
+  var atLeastOneVisible = false;
   var checkedTags = getCheckedTags();
   console.log(checkedTags);
 
-  // If at least one of a work sample's tags is checked, make it visible
+  // If a work sample has at least one tag checked, make it visible
   $(".work-samples li").each(function(index) {
     var entry = this;
     entry.style.display = "none";  // set to invisible by default
@@ -112,7 +115,16 @@ function updateVisibilityByTag() {
     entry.dataset.tags.split(", ").forEach(function(tag) {
       if (checkedTags.includes(tag)) {
         entry.style.display = "flex"; // previously "block"; modified to test new layout
+        atLeastOneVisible = true;
       }
     });
   });
+
+  // If no work samples are visible, make all visible (could be more efficient)
+  if (!atLeastOneVisible) {
+    $(".work-samples li").each(function(index) {
+      var entry = this;
+      entry.style.display = "flex";
+    });
+  };
 };

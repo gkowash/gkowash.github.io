@@ -14,12 +14,6 @@ body {
   background-color: BurlyWood;
 }
 
-body > p {
-  padding: 0px 1.5em;
-  font-size: 18px;
-  font-family: Arial;
-}
-
 .header h1 {
   margin: 0;
   font-family: Georgia;
@@ -31,6 +25,16 @@ a:link {
 
 a:visited {
   color: DarkCyan;
+}
+
+#intro {
+  width: 50em;
+}
+
+#intro p {
+  padding: 0px 1.5em;
+  font-size: 18px;
+  font-family: Arial;
 }
 
 .work-samples {
@@ -57,14 +61,18 @@ a:visited {
   border-radius: 20px;
 }
 
+.work-samples .description {
+  /*height: 70%;*/
+}
+
+.work-samples .description p {
+  font-size: 18px;
+  padding: 5px 30px;
+}
+
 .work-samples .links-tags a {
   margin-right: 14px;
   font-size: 18px;
-}
-
-.work-samples p {
-  font-size: 16px;
-  padding: 5px 30px;
 }
 
 .work-samples p.tags {
