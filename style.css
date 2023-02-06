@@ -54,7 +54,7 @@ a:visited {
 .work-samples ul > li {
   display: flex;
   flex-wrap: wrap;
-  max-width: 22em;
+  max-width: 20em;  /*22em*/
   margin: 30px 1vw 0;
   padding: 20px;
   background: rgba(150, 150, 150, 0.20);

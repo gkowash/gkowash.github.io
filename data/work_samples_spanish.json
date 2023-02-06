@@ -1,11 +1,11 @@
 [
 
   {
-    "title": "Magnetohydrodynamics (MHD) engineering internship",
-    "summary": "MHD-focused computational fluid dynamics (CFD) engineering internship in 2021 at the Princeton Plasma Physics Laboratory.",
-    "demonstrates": "Demonstrates knowledge of CFD and MHD principles with OpenFOAM (C++), ability to present technical material in written and oral format, and effective collaboratation in a professional environment.",
-    "links": [ ["Report", "PPPL_Final_Paper.pdf"], ["Presentation", "https://meetings.aps.org/Meeting/DPP21/Session/JP11.172"] ],
-    "tags": ["Professional", "Python", "C++", "CFD", "Writing", "Speaking", "Collaboration"]
+    "title": "Pasantía de ingeniería magnetohidrodinámica (MHD)",
+    "summary": "Pasantía de la dinámica de fluidos computacional con un enfoque en el MHD en el Princeton Plasma Physics Laboratory en 2021.",
+    "demonstrates": "Demuestra conocimiento del MHD con OpenFOAM (C++), habilidad de presentar información técnica de forma escrita y hablada y colaboración eficaz en un entorno profesional.",
+    "links": [ ["Informe", "PPPL_Final_Paper.pdf"], ["Presentación", "https://meetings.aps.org/Meeting/DPP21/Session/JP11.172"] ],
+    "tags": ["Profesional", "Python", "C++", "CFD", "Escritura", "Discurso", "Colaboración"]
   },
 
   {
