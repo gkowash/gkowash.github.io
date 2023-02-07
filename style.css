@@ -19,6 +19,28 @@ body {
   font-family: Georgia;
 }
 
+.footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.footer-div {
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.footer a {
+  font-family: Arial;
+  font-size: 18px;
+}
+
 a:link {
   color: DarkCyan;
 }
@@ -29,6 +51,7 @@ a:visited {
 
 #intro {
   width: 50em;
+  word-break: normal;
 }
 
 #intro p {

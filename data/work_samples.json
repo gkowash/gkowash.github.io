@@ -54,7 +54,7 @@
     "summary": "Python script to collect and download audio news reports from the NHK's Easy Japanese series.",
     "demonstrates": "Demonstrates user-oriented software design, basic web scraping with Python, and the application of programming to real-world problems.",
     "links": [ ["Code", "https://github.com/gkowash/NHK-downloader"] ],
-    "tags": ["Personal", "Python", "Web", "Audio/Video"]
+    "tags": ["Personal", "Python", "Web design", "Audio/Video"]
   },
 
   {
@@ -77,7 +77,7 @@
     "title": "From-scratch fluid simulation code",
     "summary": "Basic fluid simulation written in C# using the Unity game engine.",
     "demonstrates": "Demonstrates first-principles knowledge of computational fluid dynamics, proficiency coding in C#, and intrinsic motivation to learn.",
-    "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation"] ],
+    "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation/tree/main/Assets"] ],
     "tags": ["Personal", "CFD", "C#", "Audio/Video"]
   },
 
