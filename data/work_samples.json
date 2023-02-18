@@ -4,7 +4,7 @@
     "title": "Magnetohydrodynamics (MHD) engineering internship",
     "summary": "MHD-focused computational fluid dynamics (CFD) engineering internship in 2021 at the Princeton Plasma Physics Laboratory.",
     "demonstrates": "Demonstrates knowledge of CFD and MHD principles with OpenFOAM (C++), ability to present technical material in written and oral format, and effective collaboratation in a professional environment.",
-    "links": [ ["Report", "PPPL_Final_Paper.pdf"], ["Presentation", "https://meetings.aps.org/Meeting/DPP21/Session/JP11.172"] ],
+    "links": [ ["Report", "reports/internships/PPPL_Final_Paper.pdf"], ["Presentation", "https://meetings.aps.org/Meeting/DPP21/Session/JP11.172"] ],
     "tags": ["Professional", "Python", "C++", "CFD", "Writing", "Speaking", "Collaboration"]
   },
 
@@ -12,7 +12,7 @@
     "title": "CERN software design internship",
     "summary": "Web application created with OpenShift and NGINX to host detector calibration data for my 2022 internship at CERN.",
     "demonstrates": "Demonstrates user-oriented web and software development, ability to write technical documentation, and capacity to succeed in a professional environment.",
-    "links": [ ["Video", "https://youtu.be/-y739v5VNBg"], ["Code", "https://github.com/gkowash/nsw-plotter"], ["Documentation", "sTGC_plotter_documentation.pdf"] ],
+    "links": [ ["Video", "https://youtu.be/-y739v5VNBg"], ["Code", "https://github.com/gkowash/nsw-plotter"], ["Documentation", "reports/internships/sTGC_plotter_documentation.pdf"] ],
     "tags": ["Professional", "HTML/CSS", "JavaScript", "Python", "C++", "Web design"]
   },
 
@@ -20,7 +20,7 @@
     "title": "Motion tracking video analysis",
     "summary": "Motion tracking and analysis script written in Python for a lab course at Cal Poly Humboldt.",
     "demonstrates": "Demonstrates video processing and data analysis with Python, creative implementation of custom algorithms, and ability to write technical reports.",
-    "links": [ ["Video", "https://www.youtube.com/watch?v=G4OM8BM-_yI"], ["Report", "Lab_5__Video_Analysis.pdf"], ["Code", "https://github.com/gkowash/PHYX-462-Lab-5"] ],
+    "links": [ ["Video", "https://www.youtube.com/watch?v=G4OM8BM-_yI"], ["Report", "reports/phyx462/Lab_5__Video_Analysis.pdf"], ["Code", "https://github.com/gkowash/PHYX-462-Lab-5"] ],
     "tags": ["Academic", "Python", "Audio/Video", "Data analysis", "Writing"]
   },
 
@@ -28,7 +28,7 @@
     "title": "Determination of g from pendulum measurements",
     "summary": "Evaluation of different methods for measuring gravitational acceleration using a pendulum for a lab course at Cal Poly Humboldt.",
     "demonstrates": "Demonstrates ability to design and construct lab experiments, analyze measurements and error sources, and clearly communicate technical information in writing.",
-    "links": [ ["Report", "Lab_1__Pendulum.pdf"], ["Code", "https://github.com/gkowash/Pendulum-Lab"] ],
+    "links": [ ["Report", "reports/phyx462/Lab_1__Pendulum.pdf"], ["Code", "https://github.com/gkowash/Pendulum-Lab"] ],
     "tags": ["Academic", "Python", "Data analysis", "Electronics", "Writing"]
   },
 
@@ -68,17 +68,25 @@
   {
     "title": "Work porfolio website",
     "summary": "Work portfolio (this site) on GitHub Pages to host work samples for prospective employers.",
-    "demonstrates": "Demonstrates basic front-end web design, technical skills, and professional experience.",
+    "demonstrates": "Demonstrates basic front-end web design, organizational skills, and professionalism.",
     "links": [ ["Code", "https://github.com/gkowash/MCM-2020"] ],
     "tags": ["Professional", "HTML/CSS", "JavaScript", "Web design", "Writing"]
   },
 
   {
     "title": "From-scratch fluid simulation code",
-    "summary": "Basic fluid simulation written in C# using the Unity game engine.",
+    "summary": "Basic incompressible fluid simulation written in C# using the Unity game engine.",
     "demonstrates": "Demonstrates first-principles knowledge of computational fluid dynamics, proficiency coding in C#, and intrinsic motivation to learn.",
     "links": [ ["Video", "https://youtu.be/KLPBuklmWyE"], ["Code", "https://github.com/gkowash/Unity-fluid-simulation/tree/main/Assets"] ],
     "tags": ["Personal", "CFD", "C#", "Audio/Video"]
+  },
+
+  {
+    "title": "Assorted lab reports from electronics courses",
+    "summary": "An assortment of reports from electronics-based lab course at Cal Poly Humboldt.",
+    "demonstrates": "Demonstrates proficiency with electronic instrumentation and circuit analysis, communication of technical information in written reports, and ability to work both independently and cooperatively.",
+    "links": [ ["Reports", "labs.html"] ],
+    "tags": ["Academic", "Electronics", "Writing", "Collaboration"]
   },
 
   {

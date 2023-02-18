@@ -5,9 +5,11 @@ $(document).ready(function(){
   }).fail(function(){
     console.log("An error has occurred during $.getJSON");
   });
+
+ parseURLQuery();
+ setTimeout(updateVisibilityByTag, 50); //hacky fix for what's probably a glaring hole in my JavaScript knowledge
+
 });
-
-
 
 function addWorkSamples(data) {
   /* Add work samples from JSON data to HTML unordered list */
@@ -37,7 +39,41 @@ function addWorkSamples(data) {
   });
 
   //addTagCheckboxes();
-};
+}
+
+function getURLParameter(sParam) //from learningjquery.com
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+function parseURLQuery() {
+  /* Check any filters specified in URL */
+  var params = getURLParameter("checked");
+
+  if (typeof(params) == "string") {
+    params = params.split(",");
+
+    params.forEach( function(param) {
+      var checkbox = document.getElementById(param);
+      if (checkbox != null) {
+        $(checkbox).prop("checked", true);
+        console.log("Checking " + param);
+      }
+      else {
+        console.log("Element " + param + " in parseURLQuery() does not exist.");
+      }
+    });
+  }
+}
 
 function getTagsList(onlyChecked=false) {
   /* Get list of tags in use, option to filter only selected tags */
@@ -62,15 +98,15 @@ function getTagsList(onlyChecked=false) {
   });
 
   return tags;
-};
+}
 
 function getAllTags() {
   return getTagsList(onlyChecked=false);
-};
+}
 
 function getCheckedTags() {
   return getTagsList(onlyChecked=true);
-};
+}
 
 function getTagID(tag) {
   /* Handles forbidden characters in HTML tags (+, whitespace, etc.) */
@@ -81,7 +117,7 @@ function getTagID(tag) {
   if (tag === "HTML/CSS") {return "HTML-CSS"}
   if (tag === "Audio/Video") {return "Audio-Video"}
   else {return tag}
-};
+}
 
 /* Not currently in use! */
 function addTagCheckboxes() {
@@ -99,13 +135,13 @@ function addTagCheckboxes() {
       </div>`;
     $("#tag-selector-div").append(html);
   });
-};
+}
 
 function updateVisibilityByTag() {
   /* Update work sample visibility when a tag checkbox is toggled */
   var atLeastOneVisible = false;
   var checkedTags = getCheckedTags();
-  console.log(checkedTags);
+  console.log("Checked tags: " + checkedTags);
 
   // If a work sample has at least one tag checked, make it visible
   $(".work-samples li").each(function(index) {
@@ -126,5 +162,5 @@ function updateVisibilityByTag() {
       var entry = this;
       entry.style.display = "flex";
     });
-  };
-};
+  }
+}
